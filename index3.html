@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+
+    <title>VPERFUME</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+<style>
+  .card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 10px;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card1 button {
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    border: 2px solid black;
+  }
+  
+  .card1 button:hover {
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  </style>
+</head>
+<body>
+  
+    <div class="mdiv">
+        <!-- NavBar Start -->
+        <div class="navbar">
+          <div class="logo">
+            <img src="https://resources.commerceup.io/?key=https://prod-admin-images.s3.ap-south-1.amazonaws.com/PeZho1KcxJ6lLWV8SlDT/logo/image-w95HIOU6M.png&width=800&resourceKey=PeZho1KcxJ6lLWV8SlDT&png=true&background=no" alt="" height="70px" width="162px">
+          </div>
+          <div>
+            <div class="login">
+              <ul class="log">
+                <li class="ok"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+                </svg>  My Account</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>  Our Stores</a></li>
+                <form action="MaleFemale.html">
+                <li><a href="#"><span><input type="submit" value="MEN" class="shopNOw"></span></a></li>
+              </form>
+              <form action="female.html">
+                <li><a href="#"><span><input type="submit" value="WOMEN" class="shopNOw"></span></a></li>
+              </form>
+              </ul>
+            </div>
+         
+
+            <div class="search">
+
+              <div class="innerSearch">
+
+                  <input type="text" name="" id="" class="input" placeholder="Search for Products, brands & more..">
+               
+
+                <div style="display: flex;" class="iike">
+                  <span class="like">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-heart" viewBox="0 0 16 16">
+                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                    </svg>
+                  </span>
+                  <span style="margin-top: 15px; margin-left: 5px; font-size: 18px; font-weight: 400;">Wishlist</span>
+
+
+                  <div style="display: flex;" class="like1" >
+                      <span  style="margin-top: 7px; font-size: 18px; font-weight: 400;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="black" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                        </svg>
+                      </span>
+                      <span style="margin-top: 8px; font-size: 18px; font-weight: 400; margin-left: 15px;">My Bag</span>
+                  </div>
+
+                  <div style="display: flex; background-color: rgb(8, 8, 49);color: white; font-family: Georgia, 'Times New Roman', Times, serif;" class="like1" id="login" >
+                    <span  style="margin-top: 7px; font-size: 18px; font-weight: 400;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-person-heart" viewBox="0 0 16 16" class="heartLike">
+                        <path d="M9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4m13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276Z"/>
+                      </svg>
+                    </span>
+
+                    <span style="margin-top: 8px; font-size: 19px; font-weight: 400; margin-left: 14px;">
+                  <form action="index.html" style="cursor: pointer;">
+                      <input type="submit" name="" id="" value="LOGIN" style="background-color: rgb(8, 8, 49); color: white; border: none;">
+                  </form>
+                    </span>
+
+                </div>
+                </div>
+
+                
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+        <!-- NavBar End -->
+
+
+        <!-- Listing Start -->
+        <div class="listing">
+                <div class="new">
+                    <span class="arrivals">NEW ARRIVAlS</span>
+                </div>
+            
+                <span style="padding-left: 10px;">Men<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-down dropdown" viewBox="0 0 20 15"> 
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                    
+                </span>
+                <span style="padding-left: 10px;">Women<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 20 15" > 
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                </span>
+
+                <span style="padding-left: 10px;">Unisex<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 20 15" > 
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                 </svg>
+                </span>
+                <span style="padding-left: 10px;">Shop By Brands<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 20 15" > 
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                </span>
+                <span style="padding-left: 10px;">Exclusive Brands<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 20 15" > 
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                </span>
+                <span style="padding-left: 10px;">Travel Accessories<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 20 15" > 
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                </span>
+                <span style="padding-left: 10px;">Bath & Body <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 20 15" > 
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                </span>
+                <span style="padding-left: 10px;">Home Fragrance<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 20 15" > 
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                </span>
+                <span style="padding-left: 10px;">Kids Products<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 20 15" > 
+                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+                </span>
+
+        </div>
+        <!-- listing end -->
+
+        <!-- header Start -->
+        <div class="header">
+
+          <div class="div1">
+            <p>BUY NOW</p>
+            <p>PAY LATER</p>
+          </div>
+
+          <div class="div2">
+            <p>FREE  DELIVERY</p>
+            <p>ABOVE 200AED</p>
+          </div>
+
+          <div class="div3">
+            <p>CLICK &</p>
+            <p>COLLECT</p>
+          </div>
+        </div>
+
+        <!-- Header End -->
+
+
+
+         <!-- slide start -->
+         <div>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="2000">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-BSR_z672S.jpg&width=2000&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item"  data-interval="2000">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-7Lf0n-9Bl.jpg&width=2000&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item"  data-interval="2000">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-_7zZIByu-.jpg&width=2000&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+               <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </button>
+              </div>
+         </div>
+         <!-- Slide end -->
+
+
+         <!-- Flower Start -->
+
+        <div>
+          <img src="images/newopen.jpg" alt="" width="100%">
+        </div>
+        <br>
+        <h1 style="text-align: center; color: black;">Your One Stop Shop for Everything</h1>
+
+        <!-- Flower End -->
+
+        <!-- My Sliding Multiple image -->
+
+
+        <div class="wrapper">
+          <div class="slider">
+              <div class="slide-track">
+              
+                  <!-- Img Code -->
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-GGmtG1QVZ.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>BODY MIST</span>  
+                  </div>
+                  
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-10JRz28hp.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>DEODORANT STICK</span>
+                  </div>
+                  
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-gi6DXqQae.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>DEODERANT SPARK</span>
+                  </div>
+                  
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-dLe_hklpn.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>MINIATURE</span>
+                  </div>
+                  
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-sy8tABYEQ.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>HOMME FRAGRANCE</span>
+                  </div>
+                  
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-vZwAxwYxx.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>BUKHOOR ASSORIES</span>
+                  </div>
+                  
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-0oa7BDf7M.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>MONT BLANCE</span>
+                  </div>
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-GGmtG1QVZ.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>BODY MIST</span>  
+                  </div>
+                  
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-10JRz28hp.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>DEODORANT STICK</span>
+                  </div>
+                  
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-gi6DXqQae.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>DEODERANT SPARK</span>
+                  </div>
+                  
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-dLe_hklpn.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>MINIATURE</span>
+                  </div>
+                  
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-sy8tABYEQ.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>HOMME FRAGRANCE</span>
+                  </div>
+                  
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-vZwAxwYxx.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>BUKHOOR ASSORIES</span>
+                  </div>
+                  
+                  <div class="slide">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-0oa7BDf7M.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="">
+                    <span>MONT BLANCE</span>
+                  </div>
+                  <!-- Img Code End --> 
+              </div>
+          </div>
+      </div>
+       <!-- My Sliding Multiple Image End -->
+<!-- *************************************************** -->
+          
+          
+          
+          
+<!-------------------- Vaishnavi Code  start girl Boy ---------------------->
+
+<div>
+        <div class="maindiv">
+            <div class="img">
+                <div class="menimage">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-Q1-oL0P-g.jpg&width=1000&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="img1" class="menimg">
+                </div>
+                <div class="girlimage">
+                    <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-x9GTZJHtu.jpg&width=1000&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="img2" class="girlimg" >
+                </div>
+            </div>
+        <div class="giftimage">
+            <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-X5ug0q_T8.jpg&width=2000&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" alt="img3" class="giftimg" >
+        </div>
+        
+        <div class="rangeimg">
+            <div class="card-deck" >
+               <div class="card" style="background-color: transparent !important; border: none">
+                     <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-YpNUTUWzK.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" class="card-img-top" alt="img1">
+                     <span class="brands">LOUIS BRETON</span>
+                    </div>
+    
+                   <div class="card" style="background-color: transparent !important; border: none">
+                     <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-DFlpRpE9R.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" class="card-img-top" alt="img2">
+                     <span class="brands">MONT BLANC</span>
+                    </div>
+    
+                   <div class="card" style="background-color: transparent !important; border: none">
+                     <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-UbaZcxJ_y.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" class="card-img-top" alt="img3">
+                     <span class="brands">FAIZ NICHE</span>
+                    </div>
+    
+                 <div class="card" style="background-color: transparent !important; border: none">
+                     <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-W7lrvAXYZ.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" class="card-img-top" alt="img4">
+                     <span class="brands">CALVIN KLEIN</span>
+                    </div>
+    
+                   <div class="card" style="background-color: transparent !important; border: none">
+                     <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-t64bgl9RO.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" class="card-img-top" alt="img5">
+                     <span class="brands">OLIVE PERFUMES</span>
+                    </div>
+    
+                   <div class="card" style="background-color: transparent !important; border: none">
+                     <img src="https://resources.commerceup.io/?key=https%3A%2F%2Fprod-admin-images.s3.ap-south-1.amazonaws.com%2FPeZho1KcxJ6lLWV8SlDT%2Fresources%2Fimage-2gPsuppGe.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&background=no" class="card-img-top" alt="img6">
+                     <span class="brands">VERSACE</span>
+                   </div>
+               </div>
+        </div>
+    </div>
+  </div>
+  <br>
+  
+<!--***************** Vaishanavi Code End **************** -->
+
+  <hr>
+
+<!--------------------------- Add To Cart Start----------------------->
+
+
+<!-- <div> -->
+  
+<h1 style="text-align: center; color: black; padding: 5px;">Your One Stop Shop for Everything</h1>
+<div style="display: flex; ">
+
+  <div class="card1">
+    <form action="card5.html">
+    <img src="https://img.freepik.com/free-vector/vector-3d-realistic-mock-up-night-cosmetics_33099-1146.jpg" alt="Denim Jeans" style="width:100%">
+    <h3>CALVIN KLEIN</h3>
+    <p class="price">$19.99</p>
+    <p>A fragrance is defined as a combination of organic compounds that produces a distinct smell or odour. </p>
+    <p><input type="submit" name="" id="" value="BUY NOW" class="loginBUtton"></p>
+  </form>
+  </div>
+  
+  <div class="card1" >
+    <form action="card1.html">
+      <img src="https://5.imimg.com/data5/SELLER/Default/2022/8/MT/HI/CF/151052432/villan-oud-perfume-500x500.jpeg" alt="Denim Jeans" style="width:100%">
+      <h3>LOUIS BRETON</h3>
+      <p class="price">$19.99</p>
+      <p >A fragrance is defined as a combination of organic compounds that produces a distinct smell or odour. </p>
+      <p><input type="submit" name="" id="" value="BUY NOW"  class="loginBUtton"></p>
+    </div>
+  </form>
+   
+  <div class="card1">
+    <form action="card3.html">
+    <img src="https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/PeZho1KcxJ6lLWV8SlDT/product/AL%20MALAKI%20BOTTLE.jpg&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&jpeg=true" alt="Denim Jeans" style="width:100%" height="250px">
+    <h3>EAU DE PERFUME</h3>
+    <p class="price">$19.99</p>
+    <p>A fragrance is defined as a combination of organic compounds that produces a distinct smell or odour. </p>
+    <p><input type="submit" name="" id="" value="BUY NOW"  class="loginBUtton"></p>
+  </form>
+  </div>
+  
+    <div class="card1">
+      <form action="card4.html">
+      <img src="https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/PeZho1KcxJ6lLWV8SlDT/product/3614223519613.JPG&width=350&resourceKey=PeZho1KcxJ6lLWV8SlDT&jpeg=true" alt="Denim Jeans" style="width:100%">
+      <h3>MONT BLANCE</h3>
+      <p class="price">$19.99</p>
+      <p>A fragrance is defined as a combination of organic compounds that produces a distinct smell or odour. </p>
+      <p><input type="submit" name="" id="" value="BUY NOW" class="loginBUtton"></p>
+      </form>
+    </div>
+  
+    <div class="card1">
+      <form action="card2.html">
+      <img src="https://www.beardhood.in/cdn/shop/files/DJOKRWICKEDLQS00001-min.jpg?v=1688737392" alt="Denim Jeans" style="width:100%">
+      <h3>OLIVE PERFUMES</h3>
+      <p class="price">$19.99</p>
+      <p>A fragrance is defined as a combination of organic compounds that produces a distinct smell or odour. </p>
+      <p><input type="submit" name="" id="" value="BUY NOW"  class="loginBUtton"></p>
+    </form>
+    </div>
+
+</div>
+</div>
+
+<!-- ---------------------------------------------Add TO Cart ENd -->
+
+
+
+
+<!----------------------------Footer Start-------------------------------->
+
+
+<footer class="footer" style="margin-top: 20px;">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>Company</h4>
+              <ul type="none">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">CashbackPolicy</a></li>
+                  <li><a href="#">Terms And Condition</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Support</h4>
+              <ul type="none">
+                  <li><a href="#">Feedback</a></li>
+                  <li><a href="#">Delivery info</a></li>
+                  <li><a href="#">Refund Policy</a></li>
+                  <li><a href="#">Store locator</a></li>
+                  <li><a href="#">Terms And Condition</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Enquries</h4>
+              <ul type="none">
+                  <li><a href="#">Corporate Enquiry</a></li>
+                  <li><a href="#">Seller Resistration</a></li>
+                  <li><a href="#">Wholsale Enquiry</a></li>
+
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4 >Get in touch</h4>
+              <ul>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white"
+                      class="bi bi-envelope" viewBox="0 -2 16 16">
+                      <path
+                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                  <span style="color: white; font-size: 17px; font-weight: 400;" > wartech@gmail.com</span><br><br>
+
+                  <a href="" style="margin-top: 5px; padding-top: 5px;"><svg xmlns="http://www.w3.org/2000/svg"
+                          width="20" height="20" fill="white" class="bi bi-telephone" viewBox="0 0 16 16 ">
+                          <path
+                              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                      </svg></a><span style="color: white;  font-size: 17px; font-weight: 400;"> +919067427229</span>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4 >Support</h4>
+              <span style="color: white;  font-size: 17px; font-weight: 400;">Download App </span>
+              <a href="#" style="padding:5px; margin-top: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="22" height="22" fill="Green" class="bi bi-android2" viewBox="0 0 16 16">
+                      <path
+                          d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264m4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264M3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278m-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z" />
+                  </svg></a>
+              <a href="#" style="padding-left: 2px;padding-top: 5px;"><svg xmlns="http://www.w3.org/2000/svg"
+                      width="22" height="22" fill="white" class="bi bi-apple" viewBox="0 0 16 16">
+                      <path
+                          d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                      <path
+                          d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z" />
+                  </svg></a>
+              <br>
+              <br>
+              <span style="color: white;  font-size: 17px; font-weight: 400;">Our Social Handles</span>
+              <br>
+              <br>
+
+              <img src="facebook.png" alt="facebook" style="height: 35px; width: 35px;">
+              <img src="WtApp.png" alt="facebook" style="height: 35px; width: 35px; margin-left: 5px;">
+              <img src="instagram.png" alt="facebook" style="height: 35x; width: 35px; margin-left: 5px;">
+              <img src="twitter.png" alt="facebook" style="height: 35px; width: 35px; margin-left: 5px;">
+
+              <br>
+              <br>
+          </div>
+
+      </div>
+  </div>
+  </div>
+</footer>
+
+
+
+
+<hr style="margin: 0px;">
+<div class="Copyright">
+  <h6 align="center" style="color:  white;background-color:  #0a072b; font-size: 15px; padding-top: 15px;"><i>Copyright © 2023</i>
+      Vperfumes. All Rights Reserved. Powered by WebCastle</h6>
+</div>
+
+<!------------------------- Footer End ----------------------- -->
+
+
+
+
+
+
+
+
+
+
+</div>
+    
+</body>
+</html>
